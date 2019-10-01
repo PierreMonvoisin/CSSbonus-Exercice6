@@ -1,0 +1,40 @@
+div {
+  width: 100%;
+  height: auto;
+  padding: 10px;
+  text-align: center;
+  font-size: 125%;
+}
+@media all and (max-width: 200px){
+  div {
+    background-color: red;
+  }
+  #p2, #p3 {
+    font-size: 0;
+  }
+  #p1 {
+    color: blue;
+  }
+}
+@media all and (min-width: 200px) and (max-width: 900px){
+  div {
+    background-color: orange;
+  }
+  #p1, #p3 {
+    font-size: 0;
+  }
+  #p2 {
+    color: darkGreen;
+  }
+}
+@media all and (min-width: 900px) and (max-width: 10000px){
+  div {
+    background-color: green;
+  }
+  #p1, #p2 {
+    font-size: 0;
+  }
+  #p3 {
+    color: red;
+  }
+}
